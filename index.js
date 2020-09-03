@@ -7,6 +7,15 @@ console.log({ name, id, website })
 const { width = 100, height = 100, color = 'blue', fontSize = 25 } = { width: 300, color: 'black' };
 console.log({ width, height })
 
+// Real-world example
+const obj = { address: {city: 'Fairfield', state: 'IA', zipcode: 52556} }
+
+function printCity({address: {city}}){
+    return city;
+}
+
+printCity(obj);
+
 // Spread Operator 
 const technologies = ['Node', 'NoSQL', 'Angular']
 const gainedKnowledge = ['MongoDB', 'TypeScript', ...technologies];
