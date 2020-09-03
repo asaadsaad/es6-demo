@@ -9,11 +9,9 @@ console.log({ width, height })
 
 // Real-world example
 const obj = { address: {city: 'Fairfield', state: 'IA', zipcode: 52556} }
-
 function printCity({address: {city}}){
     return city;
 }
-
 printCity(obj);
 
 // Spread Operator 
